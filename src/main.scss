@@ -169,13 +169,32 @@ a.embroidery {
 
 }
 
-.film-page-grid-2 {
+.film-page-grid__2 {
+  display:flex;
   justify-self:center;
   padding: 7rem;
   height:auto;
   font-size: 6rem;
   font-style: normal;
   font-weight: 500;
+  .film-page-grid__3 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
   
-}
- 
+  .film-page-grid__3__2 {
+    font-size: 46px;
+    Font family: Inter;
+    font-style: Medium;
+  
+  Line height: 56px;
+  Line height: 100%;
+  Align: Left;
+  Vertical align: Top;
+  Letter spacing: -6%;
+  }
+  
+  .film-page-grid__3__1 {
+    font-size: 17px;
+    padding-top:30px;
+  }

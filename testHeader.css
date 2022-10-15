@@ -1,0 +1,27 @@
+.header {
+    background-color: yellow;
+    margin: 5px;
+}
+
+.up-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about {
+    align-self: flex-start;
+}
+
+.low-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.low-header__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact {}

@@ -1,10 +1,12 @@
-const { src, dest, watch, series } = require('gulp');
+const { src, dest, watch, series, } = require('gulp');
 const sass = require('gulp-sass');
 const tildeImporter = require('node-sass-tilde-importer');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const flatten = require('gulp-flatten');
+
+
 
 function style() {
     return src('src/main.scss')
@@ -16,6 +18,15 @@ function style() {
         .pipe(dest('build/css'))
 }
 
+function images() {
+    return src(['src/images/*.*'])
+     .pipe(flatten({
+      includeParents: 0
+     }))
+     .pipe(dest('build/images/'))
+   }
+
+
 function favicon() {
     return src('source/favicon/*.*')
         .pipe(flatten({
@@ -26,9 +37,11 @@ function favicon() {
 
 function watching() {
     watch('src/**/*scss', style);
+    
 }
 
 exports.style = style;
+
 exports.favicon = favicon;
 exports.watch = watching;
 exports.default = series(style, watching);

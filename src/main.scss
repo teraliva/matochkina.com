@@ -9,6 +9,7 @@
 @import "typography";
 @import "header";
 @import "filmpage";
+@import "normalize.css";
 
 body {
   background-color: rgba(242, 242, 242, 1)
@@ -61,9 +62,9 @@ body {
 }
 
 
-.footer-low__film {
-  // height: 100%;
-}
+// .footer-low__film {
+//   // height: 100%;
+// }
 
 .footer-low__emb {
 

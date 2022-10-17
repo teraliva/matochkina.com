@@ -1,0 +1,182 @@
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: 600;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 0.01rem;
+  line-height: 20.57px;
+
+  padding-bottom: 2px;
+  display: inline-block;
+  position: relative;
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: rgb(65, 27, 27);
+  transition: width 0.25s ease-out;
+  width: 0;
+}
+
+a:hover:after {
+  width: 100%;
+  
+}
+
+
+a.logo {
+  font-size: 54.78px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+
+  span {
+    font-family: 'Source Serif Pro', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+
+  }
+}
+
+
+
+a.film {
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+a.embroidery {
+  font-size: 135px;
+  font-family: 'Source Serif Pro', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  a.film {
+    font-size: 100px;
+  }
+
+  a.embroidery {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  a.film {
+    font-size: 90px;
+  }
+
+  a.embroidery {
+    font-size: 110px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  a.film {
+    font-size: 70px;
+  }
+
+  a.embroidery {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  a.film {
+    font-size: 60px;
+  }
+
+  a.embroidery {
+    font-size: 75px;
+  }
+}
+.film-page__2 {
+  font-family: Inter;
+  font-size: 125px;
+  font-weight: 500;
+  line-height: 151px;
+  letter-spacing: -0.06em;
+  text-align: left;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 100px;
+
+  }
+
+}
+
+.film-page__3__1 {
+  font-size: 17px;
+}
+
+.film-page__3__2 {
+  font-family: Inter;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.06em;
+  text-align: left;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 30px;
+    line-height: 40px;
+
+  }
+
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.06em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  padding-top: 30px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 30px;
+    padding-top: 0;
+
+  }
+}
+
+p.time-place {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: rgba(150, 150, 150, 1);
+  padding-top: 10px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    padding-top: 0;
+
+  }
+
+}
+

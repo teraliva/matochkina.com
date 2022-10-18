@@ -12,8 +12,11 @@
 @import "normalize.css";
 @import "carousel";
 @import "aboutme";
+@import "noise";
+
 body {
-  background-color: rgba(242, 242, 242, 1)
+  background-color: rgba(242, 242, 242, 1);
+
 }
 
 // HOMEPAGE
@@ -22,7 +25,6 @@ body {
   max-width: 1440px;
   height: 100vh;
   
-
   video {
     position: fixed;
     top: 0;

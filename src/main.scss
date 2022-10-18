@@ -10,7 +10,8 @@
 @import "header";
 @import "filmpage";
 @import "normalize.css";
-
+@import "carousel";
+@import "aboutme";
 body {
   background-color: rgba(242, 242, 242, 1)
 }
@@ -20,6 +21,7 @@ body {
   width: 100%;
   max-width: 1440px;
   height: 100vh;
+  
 
   video {
     position: fixed;
@@ -39,6 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
   
 
   
@@ -63,11 +66,12 @@ body {
 
 
 // .footer-low__film {
-//   // height: 100%;
+//   width: 35%;
 // }
 
 .footer-low__emb {
 
   justify-self: end;
   align-self: end;
+  
 }

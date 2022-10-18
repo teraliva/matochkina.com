@@ -52,9 +52,8 @@
   display: flex;
   flex-direction: column;
   align-self: flex-end;
-  height: 550px;
+  height: 90vh;
   width: 40vw;
-  flex: 0;
   padding-top: 5%;
   padding-right: 10%;
   flex-shrink: 1;
@@ -63,9 +62,9 @@
 .film-page__6 {
   display: flex;
   flex-direction: column;
-  width: 63vw;
+  align-self: center;
+  max-width: 63vw;
   padding-block: 12%;
-  padding-left: 15%;
   flex-shrink: 1;
 }
 
@@ -84,6 +83,7 @@
   align-self: flex-end;
   width: 63vw;
   padding-top: 12%;
+  padding-bottom: 30%;
   flex-shrink: 1;
 }
 
@@ -92,7 +92,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-block: 20%;
+  padding-bottom: 23%;
 
   p.next {
     padding-bottom: 10%;

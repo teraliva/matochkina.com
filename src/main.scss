@@ -5,7 +5,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: 'Times';
+  src: url(fonts/times_new_roman_italic.ttf);
+}
 @import "typography";
 @import "header";
 @import "filmpage";
@@ -62,7 +65,7 @@ body {
   display: flex;
   flex-shrink: 1;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   padding-bottom: 2%;
 }
 

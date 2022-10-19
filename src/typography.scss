@@ -30,7 +30,7 @@ a:after {
   height: 2px;
   left: 0;
   position: absolute;
-  background: rgb(65, 27, 27);
+  background: rgb(22, 21, 21);
   transition: width 0.25s ease-out;
   width: 0;
 }
@@ -46,9 +46,10 @@ a.logo {
   padding-bottom: 15px;
   padding-top: 25px;
   flex-wrap: nowrap;
+  letter-spacing: -0.01em;
 
   span {
-    font-family: 'Source Serif Pro', sans-serif;
+    font-family: 'Times', sans-serif;
     font-style: italic;
     font-weight: 400;
 
@@ -58,35 +59,59 @@ a.logo {
 
 
 a.film {
-  font-size: 110px;
+  font-size: 125px;
   font-style: normal;
   font-weight: 500;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
+  letter-spacing: -0.05em;
+
  
 }
 
 a.embroidery {
-  font-size: 135px;
-  font-family: 'Source Serif Pro', sans-serif;
+  font-size: 152px;
+  font-family: 'Times', sans-serif;
   font-weight: 400;
   font-style: italic;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
+  letter-spacing: -0.05em;
   
 }
 
+a.film:after,
+a.embroidery:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  background: rgb(22, 21, 21);
+  transition: width 0.25s ease-out;
+  width: 0;
+}
+
+a.film:hover:after,
+a.embroidery:hover::after {
+  width: 100%;
+  
+}
+
+
 @media screen and (max-width: 1300px) {
   a.film {
-    font-size: 100px;
+    font-size: 110px;
   }
 
   a.embroidery {
-    font-size: 120px;
+    font-size: 125px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   a.film {
-    font-size: 90px;
+    font-size: 100px;
   }
 
   a.embroidery {
@@ -96,11 +121,11 @@ a.embroidery {
 
 @media screen and (max-width: 1080px) {
   a.film {
-    font-size: 70px;
+    font-size: 80px;
   }
 
   a.embroidery {
-    font-size: 90px;
+    font-size: 95px;
   }
 }
 

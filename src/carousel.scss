@@ -11,20 +11,7 @@
 }
 
 .carousel {
-  height: 700px;
-  margin: auto;
-  position: relative;
-  width: 90%;
-  display: grid;
-  place-items: center;
   padding-top: 80px;
-}
-
-.slide-track {
-  display: flex;
-  width: 7032px;
-  animation: scroll 50s linear infinite;
-
 }
 
 .slide {

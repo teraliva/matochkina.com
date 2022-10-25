@@ -1,0 +1,42 @@
+.note-page{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    max-width: 682px;
+    height: auto;
+    padding-top: 156px;
+    padding-bottom: 180px;
+    flex-shrink: 1;
+    flex: 1;
+}
+.note1-page__1{
+padding-bottom: 5%;
+}
+.note1-page__2{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width:95vw;
+    padding-block: 10%;
+    flex-shrink: 1;
+}
+
+.note1-page__3{
+    padding-block: 5%;
+}
+
+.note1-page__4{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 63vw;
+  flex-shrink: 1;
+  padding-block:10%;
+}
+
+
+.note1-page__5 {
+    padding-block: 5%;
+}
+

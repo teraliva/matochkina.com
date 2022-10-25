@@ -16,10 +16,13 @@
 @import "carousel";
 @import "aboutme";
 @import "noise";
-
+@import "embroidery";
+@import "tablecloth";
+@import "contact";
+@import "blog";
+@import "note1";
 body {
   background-color: rgba(242, 242, 242, 1);
-
 }
 
 // HOMEPAGE
@@ -37,7 +40,6 @@ body {
     object-fit: cover;
     z-index: -1;
   }
-
 }
 
 .content-container {
@@ -46,10 +48,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-  
+}
 
-  
+.page-base {
+  opacity: 0;
+  display: flex;
+  flex-shrink: 1;
 }
 
 .home-page__2 {
@@ -58,25 +62,76 @@ body {
   align-self: center;
 }
 
-
-
 .footer-low {
-  
   display: flex;
   flex-shrink: 1;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 2%;
+  // padding-bottom: 2%;
 }
 
 
-// .footer-low__film {
-//   width: 35%;
-// }
 
 .footer-low__emb {
-
   justify-self: end;
   align-self: end;
+}
+
+
+img.page-img {
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.goUp {
+  animation: moveUp 1.5s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(200px)
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
   
+  font-family: 'Inter', sans-serif;
+  font-size: 125px;
+  font-weight: 500;
+  line-height: 151px;
+  letter-spacing: -0.06em;
+  
+  
+}
+
+.over {
+  position: absolute;
+  background-color: rgba(242, 242, 242, 1);
+  height: 100%; 
+  width: 100%;
+  margin-bottom: 0;
+  z-index: 1;
+  transition: transform 1s ease-in-out;
+}
+
+.bg {
+  position: absolute;
+  height: 100%; 
+  width: 100%; 
+}
+
+.open-nav {
+  transform: translateY(-100%);
 }

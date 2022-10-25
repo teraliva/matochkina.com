@@ -1,0 +1,21 @@
+.contact-page-low{
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+    align-items: flex-end;
+    padding-bottom: 2%;
+    max-height: 286px;
+}
+
+.contact-page-low__2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.contact-page-low__1 p.heading_italic {
+    padding-bottom: 11px;
+    
+}
+

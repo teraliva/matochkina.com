@@ -1,6 +1,6 @@
 // slider config
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.carousel').slick({
         speed: 9000,
         autoplay: true,
@@ -104,24 +104,24 @@ const noise = () => {
 };
 
 noise();
-  
+
 function reveall() {
-  var reveals = document.querySelectorAll(".page-base");
+    var reveals = document.querySelectorAll(".page-base");
 
-  for (var i = 0; i < reveals.length; i++) {
-    const observer = new IntersectionObserver(entries => {
-        // Loop over the entries
-        entries.forEach(entry => {
-          // If the element is visible
-          if (entry.isIntersecting) {
-            // Add the animation class
-            entry.target.classList.add('goUp');
-          }
+    for (var i = 0; i < reveals.length; i++) {
+        const observer = new IntersectionObserver(entries => {
+            // Loop over the entries
+            entries.forEach(entry => {
+                // If the element is visible
+                if (entry.isIntersecting) {
+                    // Add the animation class
+                    entry.target.classList.add('goUp');
+                }
+            });
         });
-    });
 
-    observer.observe(reveals[i]);
-  }
+        observer.observe(reveals[i]);
+    }
 }
 reveall();
 
@@ -129,6 +129,15 @@ function showVideo(e) {
     let a = document.querySelector("home-page__2");
     a.classList.add('goUp');
 }
+
+
+// small-cursor
+const scursor = document.querySelector('.small-cursor');
+const area = document.querySelector('.case');
+document.addEventListener('mousemove', (e) => {
+    scursor.style.left = e.pageX + 'px';
+    scursor.style.top = e.pageY + 'px';
+});
 
 
 

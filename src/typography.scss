@@ -1,10 +1,3 @@
-body {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-size: 100%;
-  font-weight: 600;
-
-}
 
 
 a {
@@ -13,10 +6,14 @@ a {
   font-size: 17px;
   color: rgba(0, 0, 0, 1);
   letter-spacing: 0.01rem;
-  line-height: 20.57px;
-  padding-bottom: 2px;
+  line-height: 1.4vw;
+  padding-bottom: 0.1vw;
   display: inline-block;
   position: relative;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 40px;
+  }
 }
 
 
@@ -40,9 +37,9 @@ a:hover:after {
 
 
 a.logo {
-  font-size: 54.78px;
-  padding-bottom: 15px;
-  padding-top: 25px;
+  font-size: 3.8vw;
+  padding-bottom: 1vw;
+  padding-top: 1.7vw;
   flex-wrap: nowrap;
   letter-spacing: -0.01em;
 
@@ -55,19 +52,19 @@ a.logo {
 
 a.big {
   font-family: 'Inter', sans-serif;
-  font-size: 125px;
+  font-size: 8.7vw;
   font-weight: 500;
-  line-height: 151px;
+  line-height: 10.5vw;
   letter-spacing: -0.06em;
   text-align: left;
 }
 
 a.big_span {
-  font-size: 152px;
+  font-size: 10.5vw;
   font-family: 'Times', sans-serif;
   font-weight: 400;
   font-style: italic;
-  line-height: 174.79px;
+  line-height: 174.79px; /// ?????
   letter-spacing: -0.05em;
 }
 a.case:after,
@@ -140,9 +137,9 @@ a.big_span:hover::after {
 
 p.heading {
   font-family: 'Inter', sans-serif;
-  font-size: 125px;
+  font-size: 8.7vw;
   font-weight: 500;
-  line-height: 151px;
+  line-height: 10.5vw;
   letter-spacing: -0.06em;
   text-align: left;
 
@@ -164,9 +161,9 @@ p.text-small {
 p.text-big {
   max-width: 60%;
   font-family: 'Inter', sans-serif;
-  font-size: 46px;
+  font-size: 3.2vw;
   font-weight: 500;
-  line-height: 56px;
+  line-height: 3.9vw;
   letter-spacing: -0.06em;
   text-align: left;
 
@@ -179,9 +176,9 @@ p.text-big {
 
 p.case-name {
   font-family: 'Inter', sans-serif;
-  font-size: 40px;
+  font-size: 2.8vw;
   font-weight: 500;
-  line-height: 48px;
+  line-height: 3.3vw;
   letter-spacing: -0.06em;
   text-align: left;
   color: rgba(0, 0, 0, 1);
@@ -195,7 +192,7 @@ p.case-name {
 
 p.time-place {
   font-family: 'Inter', sans-serif;
-  font-size: 17px;
+  font-size: 17px; 
   font-weight: 600;
   line-height: 21px;
   letter-spacing: -0.01em;
@@ -212,11 +209,11 @@ p.time-place {
 
 
 p.heading_italic {
-  font-size: 152px;
+  font-size: 10.5vw;
   font-family: 'Times', sans-serif;
   font-weight: 400;
   font-style: italic;
-  padding-bottom: 50px;
+  padding-bottom: 3.5vw;
   letter-spacing: -0.05em;
 
   @media screen and (max-width: 1024px) {
@@ -241,7 +238,7 @@ p.explication {
 
 p.heading-small{
 font-family: 'Inter', sans-serif;
-font-size: 90px;
+font-size: 6.25vw;
 font-weight: 500;
 line-height: 95px;
 letter-spacing: -0.06em;
@@ -291,3 +288,7 @@ p.contact-link {
   text-align: left;
 }
 
+
+
+
+  

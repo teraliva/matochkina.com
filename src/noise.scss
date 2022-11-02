@@ -1,5 +1,5 @@
 .noise {
-    z-index: 100;
+    z-index: -1;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,5 +8,5 @@
     height: 100%;
     
     pointer-events: none;
-    opacity: 0.1;
+    opacity: 0.08;
 }

@@ -22,7 +22,7 @@
 @import "tablecloth";
 @import "contact";
 @import "blog";
-@import "note1";
+@import "article1";
 
 body {
   background-color: rgba(242, 242, 242, 1);
@@ -44,7 +44,7 @@ body {
     width: 100%;
     height: 110%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
   }
 }
 
@@ -55,15 +55,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
-
-
-}
-
-.page-base {
-  opacity: 0;
-  display: flex;
-  flex-shrink: 1;
 }
 
 .home-page__2 {
@@ -75,30 +66,31 @@ body {
     font-size: 40px;
   }
 }
-
 .footer-low {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // padding-bottom: 2%;
-
-  
-
 }
-
-
 
 .footer-low__emb {
   justify-self: end;
   align-self: end;
 }
 
-
-img.page-img {
-  width: 100%;
-  object-fit: cover;
-
+//case styling
+.page-base {
+  opacity: 0;
+  display: flex;
+  flex-shrink: 1;
 }
+
+.page-base__img {
+display: block;
+width: 100%;
+// object-fit: cover; ??
+}
+
+// animation
 
 .goUp {
   animation: moveUp 1.5s ease-in-out forwards;
@@ -115,7 +107,7 @@ img.page-img {
   }
 }
 
-
+// preloader
 .center {
   display: flex;
   justify-content: center;
@@ -128,8 +120,6 @@ img.page-img {
   font-weight: 500;
   line-height: 151px;
   letter-spacing: -0.06em;
-
-
 }
 
 .over {
@@ -153,17 +143,67 @@ img.page-img {
 }
 
 
+// cursor
 .small-cursor {
+  position: fixed;
   height: 15px;
   width: 15px;
   border-radius: 50%;
   background-color: rgba(24, 23, 23, 80%);
-  position: fixed;
+  // position: absolute;
   transition: 0.2s ease-in-out;
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: top 1s, left 1s;
   transition-timing-function: ease-out;
   opacity: 1;
+}
+
+.ball {
+  position: fixed;
+  height:100px;
+  width:100px;
+  border-radius: 50%;
+  background-color: white;
+  overflow:hidden; 
+  transform: translate(-50px, -50px) scale(0);
+  pointer-events: none;
+  opacity: 1;
+  transition: transform 0.25s ease-in-out;
+}
+
+.ball_inner {
+  display:block;
+  width: 200%;
+  margin: 45% 0;
+  position: absolute;
+  animation: ball 3s linear infinite;
+}
+
+.ball_inner_text {
+  float: left;
+  width: 50%;
+}
+
+.ball_inner_text_p{
+  font-size:15px;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 0.5%;
+}
+
+@keyframes ball {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+.scaleUp {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+// img without link 
+.page-base__img {
+  display: block;
+  width: 100%;
 }
 

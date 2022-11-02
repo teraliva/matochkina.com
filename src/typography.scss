@@ -67,11 +67,6 @@ a.big_span {
   line-height: 174.79px; /// ?????
   letter-spacing: -0.05em;
 }
-a.case:after,
-a.case:hover::after{
-  text-decoration: none;
-  background: none;
-}
 
 a.big:after,
 a.big_span:after {
@@ -93,6 +88,11 @@ a.big_span:hover::after {
   width: 100%;
 }
 
+a.page-base__link:after,
+a.page-base__link:hover::after{
+  text-decoration: none;
+  background: none;
+}
 
 @media screen and (max-width: 1300px) {
   a.big {
@@ -291,4 +291,12 @@ p.contact-link {
 
 
 
-  
+p.page-heading__blog {
+font-family: 'Inter', sans-serif;
+font-size: 90px;
+font-weight: 500;
+line-height: 95px;
+letter-spacing: -0.06em;
+text-align: center;
+
+}

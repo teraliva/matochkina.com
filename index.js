@@ -30,6 +30,29 @@ $(document).ready(function () {
 
 
     });
+
+
+    const pArrow = document.querySelector('.prevArrow');
+    const nArrow = document.querySelector('.nextArrow');
+
+
+    pArrow.addEventListener("mouseover", function handleMouseOver() {
+        pArrow.style.opacity = 1;
+    });
+    
+    nArrow.addEventListener("mouseover", function handleMouseOver() {
+        nArrow.style.opacity = 1;
+    });
+
+    nArrow.addEventListener("mouseleave", function handleMouseOver() {
+        nArrow.style.opacity = 0.3;
+    });
+
+    pArrow.addEventListener("mouseleave", function handleMouseOver() {
+        pArrow.style.opacity = 0.3;
+    });
+
+
 });
 
 
@@ -161,7 +184,6 @@ const cursor = document.querySelector('.ball');
 for (var i = 0; i < areas.length; i++) {
     const area = areas[i];
 
-    console.log("pic!");
     area.addEventListener("mouseover", function handleMouseOver() {
         scursor.style.visibility = 'hidden';
         cursor.classList.add('scaleUp');

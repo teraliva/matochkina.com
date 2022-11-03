@@ -141,7 +141,7 @@ p.heading {
   font-weight: 500;
   line-height: 10.5vw;
   letter-spacing: -0.06em;
-  text-align: left;
+  text-align: center;
 
   @media screen and (max-width: 1024px) {
     font-size: 100px;
@@ -155,6 +155,7 @@ p.heading {
 p.text-small {
   font-size: 17px;
   max-width: 40%;
+  padding-top: 1%;
 
 }
 

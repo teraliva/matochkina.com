@@ -46,14 +46,12 @@ img.slide {
   right: 5%;
   height: 20px;
   width: 26px;
-  color: grey;
+  color: black;
   text-align: center;
   display: inline-block;
+  opacity: 0.3;
 }
 
-.article-page__carousel.nextArrow:hover {
-  color: black;
-}
 
 .article-page__carousel .prevArrow {
   position: absolute;
@@ -61,7 +59,8 @@ img.slide {
   right: 8%;
   height: 20px;
   width: 26px;
-  color: grey;
+  color: black;
+  opacity: 0.3;
   text-align: center;
   display: inline-block;
 }

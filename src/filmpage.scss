@@ -12,8 +12,7 @@
 .film-page__2 {
   animation: moveUp 1s ease-in-out forwards !important;
   display: flex;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
   height: auto;
   padding-top: 10.9vw;
   padding-bottom: 12.5vw;
@@ -24,7 +23,6 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
-
 }
 
 .film-page__3 {
@@ -43,6 +41,7 @@
 
 
 .film-page__4 {
+  position: relative;
   flex-direction: column;
   width: 63vw;
   padding-top: 18%;
@@ -95,12 +94,3 @@
     padding-bottom: 5%;
   }
 }
-
-
-
-// .case img #case-img {
-//   object-fit: contain;
-//   max-width: 100%;
-//   height: auto;
-// }
-

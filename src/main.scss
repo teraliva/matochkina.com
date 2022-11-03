@@ -157,6 +157,7 @@ width: 100%;
   transition: top 1s, left 1s;
   transition-timing-function: ease-out;
   opacity: 1;
+  z-index: 2;
 }
 
 .ball {
@@ -202,8 +203,31 @@ width: 100%;
 }
 
 // img without link 
-.page-base__img {
+.page-base__img__empty {
   display: block;
   width: 100%;
 }
 
+ .tag__name{
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+
+text-align: right;
+letter-spacing: -0.01em;
+
+display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ padding: 10px 15px;
+ gap: 10px;
+ position: absolute;
+ margin: 12px;
+ width: 121px;
+ height: 37px;
+ background: white;
+ border-radius: 200px;
+ }

@@ -79,4 +79,14 @@
 
 .article1-page__footer{
     padding-bottom: 100px;
+    height: 557px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    margin-right: 0;
+  
+    @media screen and (min-width: 1920px) {
+      width: 70vw;
+      height: 1000px;
+    }
 }

@@ -22,7 +22,7 @@
 .article1-page__2 {
     padding-bottom: 5%;
     display: flex;
-    
+
     flex-direction: row;
     justify-content: space-between;
     flex-shrink: 1;
@@ -79,14 +79,14 @@
 
 .article1-page__footer{
     padding-bottom: 100px;
-    height: 557px;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    margin-right: 0;
-  
+    //height: 557px;
+    //display: flex;
+    //flex-direction: row;
+    //width: 100vw;
+    margin-right: -1.8vw; // content-container margin
+
     @media screen and (min-width: 1920px) {
-      width: 70vw;
-      height: 1000px;
+      //width: 70vw;
+      //height: 1000px;
     }
 }

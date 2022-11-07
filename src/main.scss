@@ -50,14 +50,14 @@ body {
 
 .content-container {
   margin: 1.8vw 2vw;
-  height: 95vh;
-  width: 95vw;
+  //height: 95vh;
+  //width: 95vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   @media screen and (min-width: 1920px) {
-    width: 70vw;
+    //width: 70vw;
     align-self: center;
   }
 }
@@ -190,7 +190,7 @@ width: 100%;
   width:100px;
   border-radius: 50%;
   background-color: white;
-  overflow:hidden; 
+  overflow:hidden;
   transform: translate(-50px, -50px) scale(0);
   pointer-events: none;
   opacity: 1;
@@ -200,7 +200,7 @@ width: 100%;
     width: 200px;
     height: 200px;
     }
-  
+
 }
 
 .ball_inner {
@@ -236,7 +236,7 @@ width: 100%;
   transform: translate(-50%, -50%) scale(1);
 }
 
-// img without link 
+// img without link
 .page-base__img__empty {
   display: block;
   width: 100%;

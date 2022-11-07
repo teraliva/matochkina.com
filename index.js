@@ -21,39 +21,35 @@ $(document).ready(function () {
         autoplay: false,
         autoplaySpeed: 0,
         cssEase: 'linear',
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         variableWidth: true,
         arrows: true,
         nextArrow: '<span class="nextArrow"><i class="fa-solid fa-arrow-right-long fa-xl"></i></span>',
         prevArrow: '<span class="prevArrow"><i class="fa-solid fa-arrow-left-long fa-xl"></i></span>',
-
-
     });
-
-
-    const pArrow = document.querySelector('.prevArrow');
-    const nArrow = document.querySelector('.nextArrow');
-
-
-    pArrow.addEventListener("mouseover", function handleMouseOver() {
-        pArrow.style.opacity = 1;
-    });
-    
-    nArrow.addEventListener("mouseover", function handleMouseOver() {
-        nArrow.style.opacity = 1;
-    });
-
-    nArrow.addEventListener("mouseleave", function handleMouseOver() {
-        nArrow.style.opacity = 0.3;
-    });
-
-    pArrow.addEventListener("mouseleave", function handleMouseOver() {
-        pArrow.style.opacity = 0.3;
-    });
-
-
 });
+
+
+    // const pArrow = document.querySelector('.prevArrow');
+    // const nArrow = document.querySelector('.nextArrow');
+
+
+    // pArrow.addEventListener("mouseover", function handleMouseOver() {
+    //     pArrow.style.opacity = 1;
+    // });
+    //
+    // nArrow.addEventListener("mouseover", function handleMouseOver() {
+    //     nArrow.style.opacity = 1;
+    // });
+    //
+    // nArrow.addEventListener("mouseleave", function handleMouseOver() {
+    //     nArrow.style.opacity = 0.3;
+    // });
+    //
+    // pArrow.addEventListener("mouseleave", function handleMouseOver() {
+    //     pArrow.style.opacity = 0.3;
+    // });
 
 
 // noise settings

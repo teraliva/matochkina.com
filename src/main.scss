@@ -34,7 +34,7 @@ body {
 // HOMEPAGE
 .container {
   width: 100%;
-  max-width: 1440px;
+  // max-width: 1440px;
   height: 100vh;
 
   video {
@@ -55,8 +55,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (min-width: 1920px) {
+    width: 70vw;
+    align-self: center;
+  }
 }
 
+.content-container__index {
+  margin: 1.8vw 2vw;
+  height: 95vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
 .home-page__2 {
   display: flex;
   justify-content: center;
@@ -64,6 +78,7 @@ body {
 
   @media screen and (min-width: 1920px) {
     font-size: 40px;
+    padding-top: 10vw;
   }
 }
 .footer-low {
@@ -120,6 +135,10 @@ width: 100%;
   font-weight: 500;
   line-height: 151px;
   letter-spacing: -0.06em;
+
+  @media screen and (min-width: 1920px) {
+   font-size: 250px;
+  }
 }
 
 .over {
@@ -157,7 +176,12 @@ width: 100%;
   transition: top 1s, left 1s;
   transition-timing-function: ease-out;
   opacity: 1;
-  z-index: 2;
+  z-index: 3;
+
+  @media screen and (min-width: 1920px) {
+    height: 30px;
+    width: 30px;
+  }
 }
 
 .ball {
@@ -171,6 +195,12 @@ width: 100%;
   pointer-events: none;
   opacity: 1;
   transition: transform 0.25s ease-in-out;
+
+  @media screen and (min-width: 1920px) {
+    width: 200px;
+    height: 200px;
+    }
+  
 }
 
 .ball_inner {
@@ -191,6 +221,10 @@ width: 100%;
   font-weight: 400;
   color: black;
   letter-spacing: 0.5%;
+
+  @media screen and (min-width: 1920px) {
+    font-size: 30px;
+    }
 }
 
 @keyframes ball {
@@ -208,6 +242,8 @@ width: 100%;
   width: 100%;
 }
 
+
+// tag
  .tag__name{
 font-family: 'Inter', sans-serif;
 font-style: normal;
@@ -230,4 +266,11 @@ display: flex;
  height: 37px;
  background: white;
  border-radius: 200px;
+
+ @media screen and (min-width: 1920px) {
+width: 250px;
+height: 60px;
+font-size: 25px;
+margin: 30px;
+}
  }

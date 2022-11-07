@@ -46,17 +46,8 @@
     align-items: center;
     padding-bottom: 23%;
 
-    p.next {
-        padding-bottom: 5%;
-    }
-
-    a.contacts {
-        font-family: Inter;
-        font-size: 125px;
-        font-weight: 500;
-        line-height: 151px;
-        letter-spacing: -0.06em;
-        text-align: left;
-
-    }
+    @media screen and (min-width: 1920px) {
+        padding-top: 10%;
+    padding-bottom: 35%;
+      }
 }

@@ -13,20 +13,39 @@
   width: 100vw;
   margin-right: 0;
   margin-left: -30px;
+
+  @media screen and (min-width: 1920px) {
+    width: 70vw;
+    padding-top: 15vw;
+  }
 }
 
 .slide {
   height: 700px;
   width: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 15px;
+  overflow: hidden;
+
+
+
+
 }
 
 img.slide {
-  width: 100%;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-height: 700px;
+  width: auto;
+  height: auto;
   object-fit: cover;
-  height: 700px;
+  align-self: flex-start;
+
+
+
 }
 
 
@@ -36,7 +55,11 @@ img.slide {
   flex-direction: row;
   width: 100vw;
   margin-right: 0;
- 
+
+  @media screen and (min-width: 1920px) {
+    width: 70vw;
+    height: 1000px;
+  }
 
 }
 
@@ -63,6 +86,8 @@ img.slide {
   opacity: 0.3;
   text-align: center;
   display: inline-block;
+
+
 }
 
 .article-page__carousel__slide {
@@ -70,8 +95,10 @@ img.slide {
   flex-direction: column;
   justify-content: flex-start;
   padding: 15px;
-  
-  
+
+  @media screen and (min-width: 1920px) {
+    padding: 45px;
+  }
 }
 
 .article-page__carousel__slide__img {
@@ -80,6 +107,10 @@ img.slide {
   align-self: flex-start;
   justify-self: flex-start;
   padding-bottom: 30px;
+
+  @media screen and (min-width: 1920px) {
+    height: 600px;
+  }
 }
 
 p.article-page__carousel__slide__name {
@@ -91,9 +122,9 @@ p.article-page__carousel__slide__name {
   text-align: left;
   padding-bottom: 10px;
 
-}
+  @media screen and (min-width: 1920px) {
+    font-size: 70px;
+    line-height: 2vw;
+  }
 
-p.other_articles{
-  padding-bottom: 10px;
-  padding-left: 15px;
 }

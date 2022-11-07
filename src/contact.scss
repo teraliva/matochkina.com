@@ -4,7 +4,12 @@
     flex-shrink: 1;
     align-items: flex-end;
     padding-bottom: 2%;
-    max-height: 286px;
+    height: 286px;
+
+    @media screen and (min-width: 1920px) {
+        width:95vw;
+        height: 19.9vw;
+      }
 }
 
 .contact-page-low__2 {

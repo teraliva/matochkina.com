@@ -8,6 +8,14 @@
   top: 0;
   left: 0;
   right: 0;
+
+  @media screen and (min-width: 1920px) {
+    width: 95vw;
+    position: absolute;
+    left: 2vw;
+    right: 2vw;
+    top: 2.5vw;
+  }
 }
 
 .up-header {
@@ -47,6 +55,11 @@
 
 .header-svg {
   align-self: flex-end;
+
+  @media screen and (min-width: 1920px) {
+    visibility: hidden;
+  }
+  
 }
 
 .low-header__1 {

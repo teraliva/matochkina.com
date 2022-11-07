@@ -201,7 +201,7 @@ document.addEventListener('mousemove', (e) => {
 
     scursor.style.left = e.clientX + 'px';
     scursor.style.top = e.clientY + 'px';
-})
+});
 
 
 

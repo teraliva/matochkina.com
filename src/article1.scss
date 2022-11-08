@@ -74,19 +74,12 @@
     flex-direction: row;
     justify-content: space-between;
     flex-shrink: 1;
-    padding-bottom: 300px;
+    padding-bottom: 150px;
 }
 
 .article1-page__footer{
-    padding-bottom: 100px;
-    //height: 557px;
-    //display: flex;
-    //flex-direction: row;
-    //width: 100vw;
+    padding-bottom: 50px;
+    
     margin-right: -1.8vw; // content-container margin
 
-    @media screen and (min-width: 1920px) {
-      //width: 70vw;
-      //height: 1000px;
-    }
 }

@@ -65,27 +65,25 @@ img.slide {
 
 .article-page__carousel .nextArrow {
   position: absolute;
-  top: -5%;
+  top: -7%;
   right: 5%;
-  height: 20px;
-  width: 26px;
   color: black;
   text-align: center;
   display: inline-block;
   opacity: 0.3;
+  font-size: 18px;
 }
 
 
 .article-page__carousel .prevArrow {
   position: absolute;
-  top: -5%;
+  top: -7%;
   right: 8%;
-  height: 20px;
-  width: 26px;
   color: black;
   opacity: 0.3;
   text-align: center;
   display: inline-block;
+  font-size: 18px;
 }
 
 .article-page__carousel {

@@ -110,13 +110,13 @@
 
             function sayHi() {
 
-                var names = ["привіт", "hello", "hola", "добры дзень", "witam"]
+                var names = ["привіт", "hello", "hola", "你好"]
                 var i = 0
 
                 function setNext() {
                     document.getElementById("demo").innerHTML = names[i];
                     i += 1
-                    if (i > names.length - 1) {
+                    if (i > names.length) {
                         clearInterval(x);
                         var nav = document.getElementById("over")
                         nav.classList.add('open-nav')

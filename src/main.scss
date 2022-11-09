@@ -83,6 +83,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 5px;
 }
 
 .footer-low__emb {
@@ -106,7 +107,7 @@ width: 100%;
 // animation
 
 .goUp {
-  animation: moveUp 1.5s ease-in-out forwards;
+  animation: moveUp 1s ease-in-out forwards;
 }
 
 @keyframes moveUp {
@@ -168,7 +169,7 @@ width: 100%;
   border-radius: 50%;
   background-color: rgba(24, 23, 23, 80%);
   // position: absolute;
-  transition: 0.2s ease-in-out;
+  transition: 0.01s ease-in-out;
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: top 1s, left 1s;

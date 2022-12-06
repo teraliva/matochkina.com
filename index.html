@@ -25,7 +25,7 @@
 
         <div class="container">
 
-            <video class="myVideo" src="src/images/My Movie.mp4" muted loop autoplay></video>
+            <video class="myVideo" src="src/images/sky2.mp4" muted loop autoplay></video>
 
             <div class="small-cursor"></div>
 
@@ -38,7 +38,7 @@
                             <div class="up-header__1"><a href="index.html" class="logo"><span>alina</span>
                                     matochkina</a></div>
                             <div class="up-header__2"><a href="aboutme.html" class="about">about</a>
-                                <a href="blog.html">blog</a>
+                                <a href="blog.html">news</a>
                             </div>
 
 
@@ -129,14 +129,39 @@
 
             sayHi()
 
+            //         const pageContent = document.querySelector("container")
+            //         pageContent.addEventListener("DOMContentLoaded", function loadPage() {
+            //             console.log("this page is loaded!!!");
+            //         });
+
+            //         loadPage()
+
+            //         $().ready(function () {
+            //     yourFunction();
+            // });
+            // function yourFunction(){
+
+            document.onreadystatechange = function () {
+                var state = document.readyState
+                if (state == 'interactive') {
+                    document.getElementById('container').style.visibility = "hidden";
+                } else if (state == 'complete') {
+                    setTimeout(function () {
+                        // document.getElementById('interactive');
+                        // document.getElementById('load').style.visibility = "hidden";
+                        document.getElementById('container').style.visibility = "visible";
+                    }, 1000);
+                }
+            }
+      //some code
+    
             // setTimeout(sayHi, 500);
 
         </script>
 
         <!-- JS scripts -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script type="text/javascript"
-            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="index.js"></script>
         <!-- JS scripts -->
 

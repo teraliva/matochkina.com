@@ -1,12 +1,10 @@
-
-
 a {
   text-decoration: none;
   color: black;
   font-size: 17px;
   color: rgba(0, 0, 0, 1);
   letter-spacing: 0.01rem;
-  line-height: 1.4vw;
+  line-height: 21px;
   padding-bottom: 0.1vw;
   display: inline-block;
   position: relative;
@@ -37,16 +35,24 @@ a:hover:after {
 
 
 a.logo {
-  font-size: 3.8vw;
+  font-size: 55px;
   padding-bottom: 1vw;
   padding-top: 1.7vw;
   flex-wrap: nowrap;
   letter-spacing: -0.01em;
 
+  @media screen and (max-width: 767px) {
+    font-size: 40px;
+  }
+
   span {
     font-family: 'Times', sans-serif;
     font-style: italic;
     font-weight: 400;
+
+    @media screen and (max-width: 767px) {
+      font-size: 40px;
+    }
   }
 }
 
@@ -64,8 +70,17 @@ a.big_span {
   font-family: 'Times', sans-serif;
   font-weight: 400;
   font-style: italic;
-  line-height: 8vw; 
+  line-height: 8vw;
   letter-spacing: -0.05em;
+}
+
+a.small_project {
+  font-family: 'Inter', sans-serif;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 95px;
+  letter-spacing: -0.06em;
+  text-align: center;
 }
 
 a.big:after,
@@ -89,7 +104,7 @@ a.big_span:hover::after {
 }
 
 a.page-base__link:after,
-a.page-base__link:hover::after{
+a.page-base__link:hover::after {
   text-decoration: none;
   background: none;
 }
@@ -137,9 +152,8 @@ a.page-base__link:hover::after{
 
 p.heading {
   font-family: 'Inter', sans-serif;
-  font-size: 8.7vw;
+  font-size: 125px;
   font-weight: 500;
-  line-height: 10.5vw;
   letter-spacing: -0.06em;
   text-align: center;
 
@@ -150,10 +164,11 @@ p.heading {
   @media screen and (max-width: 767px) {
     font-size: 80px;
   }
+
   @media screen and (min-width: 1920px) {
     padding-top: 10vw;
   }
-   
+
 }
 
 p.text-small {
@@ -200,7 +215,7 @@ p.case-name {
 
 p.time-place {
   font-family: 'Inter', sans-serif;
-  font-size: 17px; 
+  font-size: 17px;
   font-weight: 600;
   line-height: 21px;
   letter-spacing: -0.01em;
@@ -242,7 +257,7 @@ p.explication {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
   font-weight: 500;
-  line-height: 1.7vw;
+  line-height: 23px;
   letter-spacing: -0.01em;
   text-align: center;
   padding-top: 1.4vw;
@@ -250,17 +265,17 @@ p.explication {
   @media screen and (min-width: 1920px) {
     font-size: 40px;
 
-   }
+  }
 }
 
 
-p.heading-small{
-font-family: 'Inter', sans-serif;
-font-size: 6.25vw;
-font-weight: 500;
-line-height: 95px;
-letter-spacing: -0.06em;
-text-align: center;
+p.heading-small {
+  font-family: 'Inter', sans-serif;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 95px;
+  letter-spacing: -0.06em;
+  text-align: center;
 
 
 }
@@ -275,7 +290,7 @@ p.quote {
 
   @media screen and (min-width: 1920px) {
     font-size: 40px;
-   }
+  }
 }
 
 p.author {
@@ -290,7 +305,7 @@ p.author {
 
   @media screen and (min-width: 1920px) {
     font-size: 40px;
-   }
+  }
 }
 
 p.contact-page {
@@ -301,9 +316,10 @@ p.contact-page {
   line-height: 1.7vw;
   letter-spacing: -0.01em;
   text-align: left;
+
   @media screen and (min-width: 1920px) {
     font-size: 60px;
-    width:32vw; 
+    width: 32vw;
 
   }
 }
@@ -325,18 +341,18 @@ p.contact-link {
 
 
 p.page-heading__blog {
-font-family: 'Inter', sans-serif;
-font-size: 90px;
-font-weight: 500;
-line-height: 6.5vw;
-letter-spacing: -0.06em;
-text-align: center;
-width: 47vw;
+  font-family: 'Inter', sans-serif;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 6.5vw;
+  letter-spacing: -0.06em;
+  text-align: center;
+  width: 47vw;
 
-@media screen and (min-width: 1920px) {
-  font-size: 200px;
-  width: 35vw;
-  padding-top: 15vw;
+  @media screen and (min-width: 1920px) {
+    font-size: 200px;
+    width: 35vw;
+    padding-top: 15vw;
   }
 
 }
@@ -355,12 +371,12 @@ p.next {
   }
 }
 
-p.other_articles{
+p.other_articles {
 
   padding-bottom: 20px;
- 
+
   width: auto;
-  
+
   @media screen and (min-width: 1920px) {
     font-size: 40px;
   }
